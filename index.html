@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css">
+  <title>Portfolio</title>
+</head>
+<body class="bg-gray-50">
+  <section class="relative bg-white h-screen" id="hero-section">
+    <div class="absolute top-0 left-0 w-full h-full bg-black md:bg-black opacity-60"></div>
+    <header class="fixed top-0 w-full h-20 transition-all border-b border-transparent z-50 md:z-auto">
+      <div class="container flex items-center justify-between">
+        <a class="text-white text-2xl font-semibold py-7 md:py-0" href="#hero-section" id="logo">Portfolio</a>
+    
+        <button class="block md:hidden text-white hover:text-gray-200 focus:text-gray-200 scale-100 hover:scale-95 focus:scale-95 text-xl transition-all outline-none" id="nav-toggle-btn">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <nav class="bg-white md:bg-transparent fixed top-20 left-0 w-full md:w-auto md:relative md:top-0 md:left-0 -translate-y-72 md:translate-y-0 md:block ml-auto lg:mr-10 border-y md:border-none shadow-lg md:shadow-none transition-all" id="navbar">
+          <ul class="block md:flex items-center">
+            <li class="mx-0 md:mx-5 py-0 md:py-7">
+              <a class="menu-link block bg-white md:bg-transparent hover:bg-gray-200 md:hover:bg-transparent text-gray-900 md:text-white hover:text-gray-50 text-lg px-5 md:px-0.5 py-2 md:py-0 border-b-2 border-transparent md:hover:border-gray-100 hover:opacity-90 transition-all" href="#hero-section" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="mx-0 md:mx-5 py-0 md:py-7">
+              <a class="menu-link block bg-white md:bg-transparent hover:bg-gray-200 md:hover:bg-transparent text-gray-900 md:text-white hover:text-gray-50 text-lg px-5 md:px-0.5 py-2 md:py-0 border-b-2 border-transparent md:hover:border-gray-100 hover:opacity-90 transition-all" href="#about" onclick="closeMenu()">About</a>
+            </li>
+            <li class="mx-0 md:mx-5 py-0 md:py-7">
+              <a class="menu-link block bg-white md:bg-transparent hover:bg-gray-200 md:hover:bg-transparent text-gray-900 md:text-white hover:text-gray-50 text-lg px-5 md:px-0.5 py-2 md:py-0 border-b-2 border-transparent md:hover:border-gray-100 hover:opacity-90 transition-all" href="#projects" onclick="closeMenu()">Projects</a>
+            </li>
+            <li class="mx-0 md:mx-5 py-0 md:py-7">
+              <a class="menu-link block bg-white md:bg-transparent hover:bg-gray-200 md:hover:bg-transparent text-gray-900 md:text-white hover:text-gray-50 text-lg px-5 md:px-0.5 py-2 md:py-0 border-b-2 border-transparent md:hover:border-gray-100 hover:opacity-90 transition-all" href="#experience" onclick="closeMenu()">Experience</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <button class="bg-blue-500 text-white text-lg px-5 py-2 rounded-3xl">Download CV</button> -->
+      </div>
+    </header>
+
+    <div class="container flex flex-row-reverse items-center pt-20 justify-between z-40 md:z-auto">
+      <div class="hero-image h-[85vh] w-0 lg:w-1/2">
+        <!-- <img class="h-full w-full object-cover" src="./assets/images/brain-with-digital-circuit-programmer-with-laptop-machine-learning-artificial-intelligence_566886-3242.png" alt=""> -->
+      </div>
+      <div class="hero-content bg-transparent opacity-90 w-full lg:w-1/2">
+        <div class="text-center md:text-left md:w-4/5">
+          <h5 class="welcome-text text-white text-lg -mt-5">Hey There 👋 I am</h5>
+          <hr class="bg-white mt-3 md:mt-1 mx-auto md:mx-0 w-24 md:w-16 h-1">
+          <h1 class="main-text text-white text-5xl mt-5">Usama Shaikh</h1>
+          <h3 class="caption text-white text-md uppercase font-semibold mt-4">Full Stack Developer</h3>
+          <p class="para text-white text-xl mt-5">Highly motivated, enthusiastic and keen learner with great programming skills having over 1.7 years of strong experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white h-screen flex items-center" id="about">
+    <div class="container pt-16 lg:py-12">
+      <h1 class="text-3xl text-center font-semibold">About Me</h1>
+      <p class="text-lg md:text-xl text-center md:leading-10 mt-8 lg:px-16">
+        A highly motivated, enthusiastic and keen learner with great programming skills having over <strong class="font-semibold">1.7 years</strong> of strong experience as <strong class="font-semibold">Backend Developer</strong>, looking for the opportunity to work as a <strong class="font-semibold">Full Stack Developer</strong> in a fun, fast-paced, cutting-edge environment. Working knowledge of <strong class="font-semibold">PHP</strong>, <strong class="font-semibold">MySQL</strong>, <strong class="font-semibold">Laravel</strong>, <strong class="font-semibold">Git</strong>, etc. With an added knowledge of popular tech stack, <strong class="font-semibold">MERN Stack</strong> along with <strong class="font-semibold">Redux</strong> and utility based CSS framework, <strong class="font-semibold">Tailwind CSS</strong>.
+      </p>
+
+      <div class="skills flex flex-col items-center justify-between mt-7">
+        <div class="flex items-center py-2">
+          <img class="w-10 mx-2" src="./assets/icons/mongodb.svg" title="MongoDB" alt="MongoDB">
+          <img class="w-10 mx-2" src="./assets/icons/expressjs.svg" title="Express JS" alt="Express JS">
+          <img class="w-10 mx-2" src="./assets/icons/reactjs.svg" title="Reac" alt="React JS">
+          <img class="w-10 mx-2" src="./assets/icons/nodejs.svg" title="Node JS" alt="Node JS">
+        </div>
+        <div class="flex items-center py-2">
+          <img class="w-10 mx-2" src="./assets/icons/laravel.png" title="Laravel" alt="Laravel">
+          <img class="w-10 mx-2" src="./assets/icons/php.svg" title="PHP" alt="PHP">
+          <img class="w-10 mx-2" src="./assets/icons/mysql.svg" title="MySQL" alt="MySQL">
+        </div>
+        <div class="flex items-center py-2">
+          <img class="w-10 mx-2" src="./assets/icons/html5.svg" title="HTML5" alt="HTML5">
+          <img class="w-10 mx-2" src="./assets/icons/css3.svg" title="CSS3" alt="CSS3">
+          <img class="w-10 mx-2" src="./assets/icons/javascript.svg" title="JS" alt="JS">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white md:h-screen" id="projects">
+    <div class="container py-28">
+      <h1 class="text-3xl text-center font-semibold">Projects</h1>
+      <div class="projects md:flex items-start justify-between mt-7 px-0 xl:px-32">
+        <div class="card md:w-1/2 md:mx-3 mb-5 md:mb-0 rounded-lg shadow-lg overflow-hidden">
+          <a class="block" href="https://dark-pink-beetle-suit.cyclic.app" target="_blank">
+            <img class="w-full h-52 object-cover border border-gray-300 border-b-0 rounded-t-lg" src="./assets/images/goalsetter.png" alt="">
+          </a>
+          <div class="px-6 py-5 border border-gray-300 border-t-0 rounded-b-lg">
+            <h3 class="text-xl font-semibold">
+              <a class="text-blue-800 hover:text-blue-500" href="https://dark-pink-beetle-suit.cyclic.app" target="_blank">
+                GoalSetter
+              </a>
+            </h3>
+            <p class="text-gray-500 text-lg pt-2">
+              GoalSetter is a To-do list-like web application created using MERN stack.
+            </p>
+          </div>
+        </div>
+        <div class="card md:w-1/2 md:mx-3 mb-5 md:mb-0 rounded-lg shadow-lg overflow-hidden">
+          <a class="block" href="#hero-section">
+            <img class="w-full h-52 object-cover border border-gray-300 border-b-0 rounded-t-lg" src="./assets/images/my-portfolio.png" alt="">
+          </a>
+          <div class="px-6 py-5 border border-gray-300 border-t-0 rounded-b-lg">
+            <h3 class="text-xl font-semibold">
+              <a class="text-blue-800 hover:text-blue-500" href="#hero-section">
+                My Portfolio
+              </a>
+            </h3>
+            <p class="text-gray-500 text-lg pt-2">
+              My Portfolio is responsive created using TailwindCSS with some animation and transition.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="card md:mx-3 mb-5 md:mb-0 rounded-lg shadow-lg overflow-hidden">
+          <a class="block" href="#" target="_blank">
+            <img class="w-full h-52 object-cover border border-gray-300 border-b-0 rounded-t-lg" src="./assets/images/modern-background-with-blue-color-blue-background-color-with-gradient_620503-117.jpg" alt="">
+          </a>
+          <div class="px-6 py-5 border border-gray-300 border-t-0 rounded-b-lg">
+            <h3 class="text-xl font-semibold">
+              <a class="text-blue-800 hover:text-blue-500" href="#" target="_blank">
+                Lorem ipsum
+              </a>
+            </h3>
+            <p class="text-gray-500 text-lg pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, aut?
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white md:h-screen" id="experience">
+    <div class="container py-28">
+      <h1 class="text-3xl text-center font-semibold">Experience</h1>
+      <div class="experience xl:fle items-start justify-between mt-7 px-0 2xl:px-32">
+        <div class="bg-white mb-5 px-7 py-5 border border-gray-300 rounded-lg shadow-lg">
+          <h2 class="text-gray-700 text-xl font-semibold">
+            <span class="mr-3">Backend Developer</span>
+            <span class="inline-block bg-blue-800 text-white text-sm px-4 py-1 rounded-2xl">Mar 2021 - Present</span>
+          </h2>
+          <h3 class="text-gray-500 text-md font-semibold pt-1">Studyleague IT Solutions</h3>
+          <p class="mt-3">
+            Worked on 30+ projects consisting of both new and existing project which includes E-commerce, Real estate, CRM, management systems, etc. Developed backend and APIs in Laravel and core PHP both as well as frontend and API integration in React JS. Provide technical problem resolution for complex problems.
+          </p>
+        </div>
+        <div class="bg-white mb-5 px-7 py-5 border border-gray-300 rounded-lg shadow-lg">
+          <h2 class="text-gray-700 text-xl font-semibold">
+            <span class="mr-3">Backend Developer (Intern)</span>
+            <span class="inline-block bg-blue-800 text-white text-sm px-4 py-1 rounded-2xl">Jan 2020 - Mar 2020</span>
+          </h2>
+          <h3 class="text-gray-500 text-md font-semibold pt-1">Studyleague IT Solutions</h3>
+          <p class="mt-3">
+            Worked on a social network, created features like advance News feed, like post with details about who and how many liked, similar to Facebook, Poll feature which takes user response and then calculates and displays the result based on that in the admin panel, and also created large part of admin panel which includes some complex features.
+          </p>
+        </div>
+        <div class="bg-white mb-5 px-7 py-5 border border-gray-300 rounded-lg shadow-lg">
+          <h2 class="text-gray-700 text-xl font-semibold">
+            <span class="mr-3">PHP Developer (Intern)</span>
+            <span class="inline-block bg-blue-800 text-white text-sm px-4 py-1 rounded-2xl">Nov 2019 - Dec 2019</span>
+          </h2>
+          <h3 class="text-gray-500 text-md font-semibold pt-1">Studyleague IT Solutions</h3>
+          <p class="mt-3">
+            Worked on Live projects. Developed matrimonial site’s backend using PHP & MySQL, including jQuery, AJAX and some HTML & CSS. Creating REST APIs for Android development. Worked closely with other developers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
